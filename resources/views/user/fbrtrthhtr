@@ -1,0 +1,35 @@
+  const sidebar = document.getElementById('sidebar');
+        const toggleBtn = document.getElementById('sidebarToggle');
+
+        toggleBtn.addEventListener('click', () => {
+            if (sidebar.classList.contains('-translate-x-full')) {
+                sidebar.classList.remove('-translate-x-full');
+            } else {
+                sidebar.classList.add('-translate-x-full');
+            }
+        });
+
+        // Initialize sidebar hidden on mobile by default
+        function initSidebar() {
+            if (window.innerWidth < 768) {
+                sidebar.classList.add('-translate-x-full');
+            }
+        }
+        window.addEventListener('resize', () => {
+            if(window.innerWidth >= 768){
+                sidebar.classList.remove('-translate-x-full');
+            } else {
+                sidebar.classList.add('-translate-x-full');
+            }
+        });
+        initSidebar();
+
+        // Preview image function
+        function previewImage(event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('profileImage').src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+        }
