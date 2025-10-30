@@ -23,22 +23,18 @@
 <body class="bg-gray-100 min-h-screen flex flex-col md:flex-row">
 
     <!-- Sidebar -->
-     <aside id="sidebar" class="fixed inset-y-0 left-0 z-30 w-52 bg-blue-600 text-white rounded-r-3xl shadow-lg flex flex-col transform md:relative md:translate-x-0 transition-transform duration-300 ease-in-out overflow-y-auto">
+    <aside id="sidebar" class="fixed inset-y-0 left-0 z-30 w-52 bg-blue-600 text-white rounded-r-3xl shadow-lg flex flex-col transform md:relative md:translate-x-0 transition-transform duration-300 ease-in-out overflow-y-auto">
     <div class="p-6">
-      <h1 class="text-4xl font-bold tracking-wide mb-8">Karyawan</h1>
+      <h1 class="text-4xl font-bold tracking-wide mb-8">Dinas Luar</h1>
       <nav aria-label="Main Navigation" class="space-y-4 mb-12">
         <a href="{{ url('dashboard') }}" class="flex items-center px-4 py-2 rounded-xl hover:bg-blue-700 transition font-mono">
           <i class="fas fa-tachometer-alt mr-2"></i> Dashboard
         </a>
-        <a href="{{ url('absensi') }}" class="flex items-center px-4 py-2 rounded-xl hover:bg-blue-700 transition font-mono ">
-          <i class="fas fa-calendar-check mr-2"></i> Absensi
-        </a>
+        
         <a href="{{ url('userp') }}" class="flex items-center px-4 py-2 rounded-xl bg-blue-700 hover:bg-blue-800 transition font-mono">
           <i class="fas fa-user mr-2"></i> Laporan DL
         </a>
-        <a href="{{ url('rilisu') }}" class="flex items-center px-4 py-2 rounded-xl hover:bg-blue-700 transition font-mono">
-          <i class="fas fa-paper-plane mr-2"></i> Rilis
-        </a>
+        
         <a href="{{ url('loginp') }}" class="flex items-center px-4 py-2 rounded-xl hover:bg-blue-700 transition font-mono">
           <i class="fas fa-sign-out-alt mr-2"></i> Log out
         </a>

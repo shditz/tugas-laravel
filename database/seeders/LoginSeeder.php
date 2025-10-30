@@ -12,7 +12,7 @@ class LoginSeeder extends Seeder
     {
         Login::create([
             'username' => 'admin',
-            'password' => Hash::make('admin123'), // 🔐 Password di-bcrypt
+            'password' => Hash::make('izinanggotadewan123'), // 🔐 Password di-bcrypt
         ]);
     }
 }

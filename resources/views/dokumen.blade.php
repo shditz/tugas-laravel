@@ -57,14 +57,8 @@
         <i class="fa-solid fa-calendar text-cyan-500"></i>
         <span class="text-gray-700">Dokumen DL</span>
       </a>
-      <a href="{{ url('/absenini') }}" class="flex items-center space-x-2 rounded-md hover:bg-cyan-100 duration-200 p-2">
-        <i class="fa-sharp fa-regular fa-calendar text-cyan-500"></i>
-        <span class="text-gray-700">Absensi karyawan</span>
-      </a>
-       <a href="{{ url('/rilis') }}" class="flex items-center space-x-2 rounded-md hover:bg-cyan-100 duration-200 p-2">
-        <i class="fa-sharp fa-regular fa-calendar text-cyan-500"></i>
-        <span class="text-gray-700">data rilis</span>
-      </a>
+    
+       
       <a href="{{ url('/login') }}" class="flex items-center space-x-2 rounded-md hover:bg-cyan-100 duration-200 p-2">
         <i class="fa-solid fa-right-from-bracket text-cyan-500"></i>
         <span class="text-gray-700">Log Out</span>
